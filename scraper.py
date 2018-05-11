@@ -125,6 +125,8 @@ for pages in itertools.count(1):
             csvMth = 'Q0'
         if 'february-to-may' in link['href']:
             csvMth = 'Q0'
+        if 'july-to-december' in link['href']:
+            csvMth = 'Q0'
         csvMth = convert_mth_strings(csvMth.upper())
         data.append([csvYr, csvMth, link_csv])
     block = soup.find('td', attrs = {'colspan':'4'})
